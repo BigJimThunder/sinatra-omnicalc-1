@@ -1,0 +1,20 @@
+<h1>
+Random Results
+</h1>
+<div>
+</div>
+
+<p> APR </p>
+<%= @apr.to_fs(:percentage, precision: 4) %>
+<p> Number of years </p>
+<%= @years.to_s %>
+<p>Principal</p>
+<%= @principal.to_fs(:currency) %>
+<p>Payment</p>
+<%= @result.to_fs(:currency) %>
+<div>
+</div>
+
+<form action="/payment/new">
+  <button>Calculate another payment</button>
+</form>

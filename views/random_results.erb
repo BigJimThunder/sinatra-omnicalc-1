@@ -1,0 +1,18 @@
+<h1>
+Random Results
+</h1>
+<div>
+</div>
+
+<p> Minimum </p>
+<%= @min.to_s %>
+<p> Maximum </p>
+<%= @max.to_s %>
+<p>Random Number</p>
+<%= @result.to_s %>
+<div>
+</div>
+
+<form action="/random/new">
+  <button>Pick another number</button>
+</form>
